@@ -7,19 +7,17 @@
 		</title>
 		<script>
 		function validate() {
-
-			var searchString;
-			var empty = "";
 			// check if we have a search term before searching
 			// 1. get a reference to the searchbox
 			//    using the DOM api method document.getElementById();
 			// searchbox = ???;
-			var searchString = document.getElementById('searchbox');
-			console.log(this.searchString);
+			var searchbox = document.getElementById('searchbox');
+			console.log(this.searchbox);
 
 			// 2. get the value of the searchbox
 			//    using the DOM api value property of an element
 			// searchvalue = ???;
+			var searchvalue = searchbox.getAttribute();
 
 			// 3. test if the value is not equal to an empty string ("")
 			// if (???) {
@@ -29,8 +27,9 @@
 			// 	alert("please type a search query!");
 			// 	return false;
 			// }
+			var empty = "";
 
-			if (searchString != empty) {
+			if (searchvalue != empty) {
 				return true;
 			}
 			else {
@@ -48,7 +47,7 @@
 		<h1>
 			Noogle!
 		</h1>
-		<form name='search' method="get" onsubmit="return validate();" action="results.html">
+		<form name='search' method="get" onsubmit="return validate();" action="results.html" >
 			<input type="text" name="q" id="searchbox" size="50">
 			<input type="submit" value="Noogle it!">
 		</form>
