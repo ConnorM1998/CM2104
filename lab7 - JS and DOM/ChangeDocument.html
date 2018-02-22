@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  <p>Skittles</p>
+  <p>Fear</p>
+  <p>Anger</p>
+
+  <script>
+  //variable paragraphs = all <p>
+  var paragraphs = document.body.getElementsByTagName("p");
+  //Swaps first position <p>[0] with <p>[2]
+  document.body.insertBefore(paragraphs[2], paragraphs[0]);
+
+  //Replaces the HTML to the following
+  //document.body.innerHTML = "<p> Well that was useful </p>"
+
+  var newPara = document.createTextNode("A Jedi Craves not these things");
+  document.body.appendChild(newPara);
+
+  </script>
+</body>
+
+</html>
