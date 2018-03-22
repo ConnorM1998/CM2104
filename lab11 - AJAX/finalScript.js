@@ -28,7 +28,7 @@ function addResultTitles(jsondata){
   //iterate over the collection of resultsbox
   for (var i = 0; i<10; i++){
     var title = jsondata.Search[i].Title;
-    htmlstring += "<li>" + title + "<li>";
+    htmlstring += "<li>" + title;
   }
 
   //inject the HTML into our empty list

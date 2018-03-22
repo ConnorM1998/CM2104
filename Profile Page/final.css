@@ -30,10 +30,16 @@ html,body {
   box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
 }
 
+main {
+      padding: 20px 20px 0px 20px;
+}
+
+
+/*  ////////////////////////////////////////////// */
 /*  HEADER STUFF */
 header {
   background: #eee;
-  /* background-image: url("https://image.noelshack.com/fichiers/2017/38/2/1505775648-annapurnafocus.jpg"); */
+  background-image: url("https://image.noelshack.com/fichiers/2017/38/2/1505775648-annapurnafocus.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,28 +50,18 @@ header {
   text-align: center;
   color: white;
 }
+/*  ////////////////////////////////////////////// */
 
 
-/*  ============================= */
-
-/* header i {
-  position: relative;
-  cursor: pointer;
-  right: -96%;
-  top: 25px;
-  font-size: 18px !important;
-  color: #fff;
-} */
-
-main {
-      padding: 20px 20px 0px 20px;
-}
-
+/*  ////////////////////////////////////////////// */
+/*  LEFT COLUMN STUFF */
 .left {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 5px solid #ededed;
+
 }
 
 .photo {
@@ -89,9 +85,9 @@ main {
   margin-top: 25px;
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ededed;
   font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid #ededed;
+
 }
 
 .number-stat {
@@ -118,15 +114,10 @@ main {
   padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
 }
+/*  ////////////////////////////////////////////// */
 
 
-
-
-
-
-
-
-
+/*  ////////////////////////////////////////////// */
 /*  THIS IS SKILL/XP BAR STUFF */
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
@@ -144,16 +135,23 @@ main {
     color: white; /* White text color */
 }
 
-.bar {width: 20%; background-color: #4CAF50;} /* Green */
+.bar {width: 50%; background-color: #4CAF50;} /* Green */
 /*  ////////////////////////////////////////////// */
 
 
+/*  ////////////////////////////////////////////// */
+/*  RIGHT COLUMN SUFF*/
 
+/* .row-details{
+  float: right;
+} */
 
-/*  RIGHT COLUMN */
 .right {
   padding: 0 25px 0 25px !important;
+}
 
+.favourites {
+  text-align: center;
 }
 
 .column-layout {
@@ -170,15 +168,19 @@ main {
   flex: 1;
   /* Makes the sidebar-one come first */
   order: 1;
+  text-align: center;
 }
 .sidebar-two {
   /* Spaces the columns equally */
   flex: 1;
   order: 2;
+  text-align: center;
 }
 .sidebar-three {
   /* Spaces the columns equally */
   /* Increase the value for bigger spacing */
   flex: 1;
   order: 3;
+  text-align: center;
 }
+/*  ////////////////////////////////////////////// */
