@@ -38,13 +38,15 @@ button:hover, a:hover {
 }
 /*  ////////////////////////////////////////////// */
 
+
+
 /*  THIS IS SKILL/XP BAR STUFF */
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
-/* Container for skill bar */
+/* Container for experience bar */
 .container {
-    width: 100%; /* Full width */
+    width: 50%; /* Full width */
     background-color: #ddd; /* Grey background */
 }
 
@@ -55,4 +57,5 @@ button:hover, a:hover {
     color: white; /* White text color */
 }
 
-.bar {width: 90%; background-color: #4CAF50;} /* Green */
+.bar {width: 20%; background-color: #4CAF50;} /* Green */
+/*  ////////////////////////////////////////////// */
