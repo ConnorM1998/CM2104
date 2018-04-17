@@ -21,7 +21,7 @@ app.get('/', function(req, res){
     if(!error){
       //formats the JSON data from twitter
       var output = "";
-      for(var t = 0, t < tweets.length; t++){
+      for(var t = 0; t < tweets.length; t++){
         output += "<div>";
         output += "<h2>" + tweets[t].user.screen_name + "</h2>";
         output += "<p>" + tweets[t].text + "</p>";
