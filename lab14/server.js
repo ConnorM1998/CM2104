@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 
   client.get('statuses/user_timeline', params, function(error, tweets, response){
     if(!error){
-      res.send(tweets);
+      console.log(tweets);
     }
   });
 //
