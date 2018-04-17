@@ -19,7 +19,15 @@ app.get('/', function(req, res){
 
   client.get('statuses/user_timeline', params, function(error, tweets, response){
     if(!error){
-      console.log(tweets);
+      //formats the JSON data from twitter
+      var output = "";
+      for(var t = 0, t < tweets.length; t++){
+        output += "<div>";
+        output += "<h2>" + tweets[t].user.screen_name + "</h2>";
+        output += "<p>" + tweets[t].text + "</p>";
+        output += "</div>";
+      }
+      res.send(output);
     }
   });
 //
