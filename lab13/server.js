@@ -1,4 +1,3 @@
-app.use(express.static('public'));
 
 var express = require('express');
 var app = express();
@@ -24,3 +23,5 @@ app.get('/getform', function(reg, res){
 });
 
 app.listen(8080);
+
+app.use(express.static('public'));
