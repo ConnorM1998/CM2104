@@ -16,7 +16,7 @@ app.get('/add', function(req, res){
   res.send("X + Y = " + (x+y));
 });
 
-app.get('/getform', function(reg, res){
+app.get('/getform', function(req, res){
   var name = req.query.name;
   var quest = req.query.quest;
   res.send("Hi " + name + " i am sure you will " + quest);
