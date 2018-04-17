@@ -22,6 +22,6 @@ app.get('/getform', function(reg, res){
   res.send("Hi " + name + " i am sure you will " + quest);
 });
 
-app.listen(8080);
-
 app.use(express.static('public'));
+
+app.listen(8080);
