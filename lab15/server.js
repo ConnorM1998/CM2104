@@ -31,6 +31,7 @@ app.get('/all', function(req, res){
   });
 });
 
+//Add quotes
 app.post('/quotes', function(req, res){
   db.collection('quotes').save(req.body, function(err, result){
     if(err) throw err;
@@ -38,3 +39,20 @@ app.post('/quotes', function(req, res){
     res.redirect('/')
   })
 })
+
+//Filter
+app.post('/search', function(req, res){
+  db.collection('quotes').find(req.body).toArray(function(err,result){
+    if(err) throw err;
+
+    var output = "<h1>All the Quotes</h1>";
+
+    for(var i=0; i<result.length; i++){
+      output += "<div>"
+      output += "<h3>" + result[i].name + "</h3>"
+      output += "<p>" + result[i].quote + "</p>"
+      output += "</div>"
+    }
+    res.send(output);
+  });
+});
