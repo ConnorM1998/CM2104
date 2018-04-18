@@ -27,4 +27,4 @@ app.get('/all', function(req, res){
     }
     res.send(output);
   });
-})''
+});
